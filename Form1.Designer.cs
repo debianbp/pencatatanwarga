@@ -68,9 +68,9 @@ partial class Form1
         this.dgvWarga.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvWarga_CellClick);
 
         // Configure DataGridView
-        this.dgvWarga.Location = new System.Drawing.Point(12, 280);
+        this.dgvWarga.Location = new System.Drawing.Point(12, 290);
         this.dgvWarga.Name = "dgvWarga";
-        this.dgvWarga.Size = new System.Drawing.Size(760, 230);
+        this.dgvWarga.Size = new System.Drawing.Size(760, 225);
         this.dgvWarga.TabIndex = 5;
         this.dgvWarga.ReadOnly = true;
         this.dgvWarga.AllowUserToAddRows = false;
