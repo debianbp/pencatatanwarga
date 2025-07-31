@@ -45,9 +45,16 @@ namespace pencatatanwarga
         {
             if (string.IsNullOrWhiteSpace(txtNIK.Text) ||
             string.IsNullOrWhiteSpace(txtNamaLengkap.Text) ||
-            string.IsNullOrWhiteSpace(cmbJenisKelamin.Text))
+            string.IsNullOrWhiteSpace(cmbJenisKelamin.Text)) // Validasi NIK harus diisi dan 16 karakter
             {
                 MessageBox.Show("NIK, Nama Lengkap, dan Jenis Kelamin harus diisi.", "Peringatan",
+                MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (txtNIK.Text.Length != 16)
+            {
+                MessageBox.Show("NIK harus terdiri dari 16 karakter.", "Peringatan",
                 MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
